@@ -1,0 +1,30 @@
+{% include header.html %}
+
+<div class="container">
+  <section class="center">
+    <div class="col-70">
+      <h2>{{ page.title }}</h1>
+      <p class="subheader text-align--center">
+        {{ page.date | date_to_string }}
+        {% if page.tags %}
+          {% for tag in page.tags %}
+            <a href="{{ site.url }}/{{ tag }}">{{ tag }}</a>
+          {% endfor %}
+        {% endif %}
+      </p>
+    </div>
+    {% if page.excerpt %}
+      <div class="col-70 margin--m--bottom">
+        <p class="h4 subheader lead">{{ page.excerpt }}</p>
+      </div>
+    {% endif %}
+      
+      <div class="col-70 margin--m--bottom">
+        {{ content }}
+      </div>
+
+  </section>
+</div>
+{% include nextblogpost.html %}
+{% include social_footer.html %}
+{% include footer.html %}
