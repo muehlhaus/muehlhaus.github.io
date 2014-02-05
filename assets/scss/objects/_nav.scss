@@ -1,0 +1,121 @@
+/* Navigation
+-------------------------------------------------------------- */
+.nav--toggle{
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  @include font-size(1.7);
+  line-height: 3rem;
+  height: 3rem;
+  width: 3rem;
+  text-align: center;
+  display: block;
+  z-index: 6;
+  color: $color-light;
+  background: rgba($color-dark,0.1);
+  border-radius: 20%;
+  cursor: pointer;
+
+  &:hover{
+    background: rgba($color-dark,0.4);
+  }
+
+  &.nav--open{
+    color: $color-light;
+    background: transparent;
+
+    &:hover{
+      color: darken($color-light,5%);
+    }
+  }
+
+  @media (min-width : $breakpoint-m) {
+    display: none;
+  }
+}
+
+
+nav.main_nav{
+  font-family: $font-family-primary;
+  padding: 2.3rem;
+  z-index: 1;
+  @include font-size($size-small);
+  color: darken($color-light,40%);
+  text-align: center;
+  position: fixed;
+  top: 0;
+  right: 0;
+  display: none;
+  width: 100%;
+  background: $color-green;
+  z-index: 5;
+
+  @media (min-width : $breakpoint-m) {
+    display: block;
+    position: static;
+    background: transparent;
+    padding: 2.3rem;
+    padding-bottom: 0;
+  }
+
+  &.open{
+    display:block;
+  }
+  &.closed{
+    display:none;
+    @media (min-width : $breakpoint-m) {
+      display: block;
+    }
+  }
+
+  .inner{
+
+    ul.links{
+      list-style: none;
+      margin: auto;
+      padding: 0;
+      text-align: center;
+      font-size: 0;
+      width: 100%;
+
+      @media (min-width : $breakpoint-m) {
+        width: 80%;
+        max-width: 40rem;
+        border-top: 2px solid rgba($color-light,0.3);
+      }
+
+      li{
+        font-size: 1rem;
+        display: block;
+
+        @media (min-width : $breakpoint-m) {
+          display: inline-block;
+        }
+
+        a{
+          display: block;
+          padding: 0.5rem 1rem;
+          color: $color-light;
+          border-bottom: 1px solid rgba($color-light,0.1);;
+          
+          @media (min-width : $breakpoint-m) {
+            border-top: 2px solid transparent;
+            border-bottom: none;
+            margin-top: -2px;
+          }
+
+          &:hover,
+          &.active{
+            color: $color-light;
+            background: rgba($color-light,0.1);
+
+            @media (min-width : $breakpoint-m) {
+              color: $color-light;
+              border-top: 2px solid $color-light;
+            }
+          }
+        }
+      }
+    }
+  }
+}

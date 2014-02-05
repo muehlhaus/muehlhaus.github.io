@@ -1,0 +1,23 @@
+source:       .
+destination:  ./_site
+layouts:      ./_layouts
+keep_files:   ['.git','.svn']
+exclude:      ['.editorconfig','*.sublime-project','*.sublime-workspace','README.md','CNAME']
+timezone:     Europe/Berlin
+future:       true
+limit_posts:  0
+markdown:     redcarpet
+
+name:         "Bioinformatics"
+description:  "Timo Mühlhaus"
+keywords:     "timo mühlhaus,timo muehlhaus, bioinformatics, bio,informatic,uni kaiserslautern"
+url:          "http://localhost:4000"
+
+paginate:     10
+permalink:    pretty
+
+me:
+  phone:      +49 (0) 157/752 121 65
+  email:      muehlhaus@outlook.com
+  googleplus: 116873716263477747103
+  github:     muehlhaus

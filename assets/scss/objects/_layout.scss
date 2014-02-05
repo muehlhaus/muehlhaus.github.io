@@ -1,0 +1,16 @@
+/* Layout
+-------------------------------------------------------------- */
+.container{
+  width: 100%;
+  text-align: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+
+  &.container-image--top{
+    background-position: top center;
+  }
+  &.container-image--bottom{
+    background-position: bottom center;
+  }
+}
