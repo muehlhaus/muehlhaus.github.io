@@ -8,7 +8,7 @@ future:       true
 limit_posts:  0
 markdown:     redcarpet
 
-name:         "Bioinformatics"
+name:         "Bioinformatics Lab"
 description:  "Timo Mühlhaus"
 keywords:     "timo mühlhaus,timo muehlhaus, bioinformatics, bio,informatic,uni kaiserslautern"
 url:          "http://localhost:4000"
