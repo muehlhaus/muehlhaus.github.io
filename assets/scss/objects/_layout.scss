@@ -13,4 +13,8 @@
   &.container-image--bottom{
     background-position: bottom center;
   }
+  &.alt{
+    background: #efefef;
+    border-bottom: 1px solid #ccc;
+  }
 }
