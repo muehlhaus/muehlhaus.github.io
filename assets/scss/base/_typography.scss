@@ -277,13 +277,13 @@ img{
 -------------------------------------------------------------- */
 
 a{
-  color: $color-dark;
+  color: $color-green;
   text-decoration: none;
 
   &:hover,
   &:active,
   &:focus {
-    color: darken($color-dark,10%);
+    color: darken($color-green,10%);
   }
 }
 
