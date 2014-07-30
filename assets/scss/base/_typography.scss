@@ -8,7 +8,6 @@ h1,.h1{
   margin: 1.5rem 0;
   font-weight: 300;
   color: $color-dark;
-  text-align: center;
 }
 h2,.h2{
   font-family: $font-family-primary;
@@ -18,7 +17,6 @@ h2,.h2{
   margin: 2.3rem 0 1.3rem 0;
   font-weight: 300;
   color: lighten($color-dark,10%);
-  text-align: center;
 }
 h3,.h3{
   font-family: $font-family-primary;
@@ -28,7 +26,6 @@ h3,.h3{
   margin: 2.4rem 0 1.3rem 0;
   font-weight: 500;
   color: lighten($color-dark,15%);
-  text-align: center;
 }
 h4,.h4{
   font-family: $font-family-primary;
@@ -38,7 +35,6 @@ h4,.h4{
   margin: 2.3rem 0 1.2rem 0;
   font-weight: 500;
   color: darken($color-dark,5%);
-  text-align: center;
 }
 h5,.h5{
   font-family: $font-family-primary;
@@ -48,7 +44,6 @@ h5,.h5{
   margin: 2.3rem 0 1.2rem 0;
   font-weight: 700;
   color: darken($color-dark,10%);
-  text-align: center;
 }
 h6,.h6{
   font-family: $font-family-primary;
@@ -58,7 +53,6 @@ h6,.h6{
   margin: 2.3rem 0 1.2rem 0;
   font-weight: 700;
   color: darken($color-dark,15%);
-  text-align: center;
 }
 
 p,.p{
